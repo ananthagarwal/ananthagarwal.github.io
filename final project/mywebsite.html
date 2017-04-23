@@ -2,22 +2,71 @@
 <html>
 <head>
 	<title>Ananth Agarwal</title>
-	
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="script.js" type = "text/javascript" ></script>
+
 </head>
-<body>
-	<div class = "nav" id = "navBar">
-		<a href = "#about">About</a>
-		<a href = "#activities">Activities</a>
-		<a href = "#projects">Projects</a>
-		<a href = "#contact">Contact</a>
-	</div>
-	<div id = "intro">
-		<h1 id = "name">I'm Ananth Agarwal!</h1>
-		<p id = "briefIntro">I'm a first-year student studying Electrical Engineering and Computer Science at the University of California, Berkeley. Check out my interests and projects!</p>
-	</div>
-	<div id = "about"></div>
-	<div id = "activities"></div>
-	<div id = "projects"></div>
-	<div id = "contact"></div>
+<body id = "hi">
+	<nav class = "nav" id = "navBar">
+		<ul class = "nav">
+			<li><a href = "#about">ABOUT</a></li>
+			<li><a href = "#activities">ACTIVITIES</a></li>
+			<li><a href = "#projects">PROJECTS</a></li>
+			<li><a href = "#contact">CONTACT</a></li>
+		</ul>
+	</nav>
+	<br>
+	<section>
+		<div id = "intro">
+			<h1 id = "name">I'm Ananth Agarwal!</h1>
+			<p id = "briefIntro">I'm a first-year student studying Electrical Engineering and Computer Science at the University of California, Berkeley. Check out my activities and projects! </p>
+		</div>
+	</section>
+	<section>
+		<div id = "about">
+			<p>Coming to UC Berkeley has been one of the best decisions in my life. My academic interests include software programming, machine learning, and data science. I love serving as a mentor and tutor to students. My other hobbies include trying new foods, traveling, and rooting for the Trail Blazers.</p>
+		</div>
+	</section>
+	<section id = "activities">
+		<div id = "coderSchool">
+			<img src="img/coder.jpg" class = "pic">
+			<p> I work as a Code Coach at the Coder School Berkeley. I develop lesson plans and use dynamic and project-based instruction to teach computer science to kids in a semi- private lesson format. Most of my students work with Snap, which was developed at Cal, or are learning Python. My goal is to foster an engaging and inclusive environment to inspire kids from all backgrounds to pursue computer science.</p>
+		</div>
+		<div id = "csm">
+			<img src="img/csm.jpg" class="pic"> 
+			<p> I am a Junior Mentor in CSM for CS 61A, The Structure and Interpretation of Computer Programs. I lead weekly tutoring sessions and prepare lectures and study materials for students. I enjoy helping students in a class that I liked.
+			</p>
+		</div>
+		<div id = "myab">
+			<img src="img/myab.jpg" class = "pic">
+			<p> In high school I was the Vice Chair of the Beaverton Mayor's Youth Advisory Board. I worked with twenty-five teens and Beaverton city council members to identify issues affecting youth in the community, ways we could help, and take action. 
+			</p>
+		</div>
+	</section>	
+	<section id = "projects">
+		<div id = "bearmaps">
+			<img src="img/bearmaps.jpg">
+			<p> Developed a web mapping application that constructs an online user-friendly map of Berkeley and finds the shortest path between locations.
+			</p>
+		</div>
+		<div id = "dataBase">
+			<img src="img/database.jpg">
+			<p> Built a relational database management system (DBMS) in Java and a domain specific language (DSL) similar to SQL for users to interact with the database. Database supports multiple data types, arithmetic operations, comparisons, loading and storing tables, and data selection.
+			</p>
+		</div>
+		<div id="interpreter">
+			<img src="img/scheme.jpg">
+			<p> Developed an interpreter for a subset of the Scheme language in Python. It handled core functionality, user defined procedures, and special forms.
+			</p>
+		</div>
+	</section>
+	<section id = "contact">
+		<div id="basic">
+			<p>Ananth Agarwal</p>
+			<p>(503) 964-8870</p>
+			<p>ananth.agarwal@berkeley.edu</p>
+		</div>
+		<button id = "resume">Download Resume</button>
+	</section>
 </body>
 </html>
