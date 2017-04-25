@@ -3,64 +3,98 @@
 <head>
 	<title>Ananth Agarwal</title>
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="typed.js-master/js/typed.js"></script>
 	<script src="script.js" type = "text/javascript" ></script>
+	
+	
+	<link href='https://fonts.googleapis.com/css?family=Fira Sans' rel='stylesheet'>
 
 </head>
 <body id = "hi">
 	<nav class = "nav" id = "navBar">
 		<ul class = "nav">
-			<li><a href = "#about">ABOUT</a></li>
-			<li><a href = "#activities">ACTIVITIES</a></li>
-			<li><a href = "#projects">PROJECTS</a></li>
-			<li><a href = "#contact">CONTACT</a></li>
+			<li><a class = "head" href = "#about">ABOUT</a></li>
+			<li><a class = "head" href = "#activities">ACTIVITIES</a></li>
+			<li><a class = "head" href = "#projects">PROJECTS</a></li>
+			<li><a class = "head" href = "#contact">CONTACT</a></li>
 		</ul>
 	</nav>
 	<br>
-	<section>
-		<div id = "intro">
-			<h1 id = "name">I'm Ananth Agarwal!</h1>
-			<p id = "briefIntro">I'm a first-year student studying Electrical Engineering and Computer Science at the University of California, Berkeley. Check out my activities and projects! </p>
+	<section id = "intro" class="main">
+		<div>
+			<h1 id = "name" class = "typed">Ananth Agarwal</h1>
+			<div id = "briefIntro"> I'm a student studying Electrical Engineering and Computer Science at the University of California, Berkeley. Check out my activities and projects!
+			</div>
+			<div id = "seal">
+				<img id = "logo" src="img/ucb.jpg">
+			</div>
 		</div>
 	</section>
-	<section>
-		<div id = "about">
-			<p>Coming to UC Berkeley has been one of the best decisions in my life. My academic interests include software programming, machine learning, and data science. I love serving as a mentor and tutor to students. My other hobbies include trying new foods, traveling, and rooting for the Trail Blazers.</p>
+	<section id = "about" class = "main">
+		<h1 class = "label">About</h1>
+		<img src="img/blazer.jpg" class = "hidden" id = "blazer1">
+		<div class = "info">
+			<img src="img/me.jpg" id = "myself" class = "pic">
+			<p class = "in">I was born and raised in Portland, Oregon. Coming to UC Berkeley has been one of the best decisions in my life. My academic interests include software programming, machine learning, and data science.  My hobbies include playing tennis, trying new foods, traveling, and rooting for the <button id = "show" class = "click">Trail Blazers</button></p>
 		</div>
 	</section>
-	<section id = "activities">
+	<section id = "activities" class = "main">
+		<h1 class = "label">Activities</h1>
 		<div id = "coderSchool">
 			<img src="img/coder.jpg" class = "pic">
-			<p> I work as a Code Coach at the Coder School Berkeley. I develop lesson plans and use dynamic and project-based instruction to teach computer science to kids in a semi- private lesson format. Most of my students work with Snap, which was developed at Cal, or are learning Python. My goal is to foster an engaging and inclusive environment to inspire kids from all backgrounds to pursue computer science.</p>
+			
+			<div class = "typed">
+				<p id = "python"></p>
+				<p id = "python2"></p>
+			</div>
+			<img id = "snap" class = "hidden" src = "img/snap.jpg">
+			<p class = "in" id = "coder"> I work as a Code Coach at the Coder School Berkeley. I develop lesson plans and use dynamic and project-based instruction to teach computer science to kids in a semi- private lesson format. Most of my students work with <button id = "snapp" class = "click"> Snap </button>, which was developed at Cal, or are learning Python. My goal is to foster an engaging and inclusive environment to inspire kids from all backgrounds to pursue computer science.</p>
 		</div>
 		<div id = "csm">
-			<img src="img/csm.jpg" class="pic"> 
-			<p> I am a Junior Mentor in CSM for CS 61A, The Structure and Interpretation of Computer Programs. I lead weekly tutoring sessions and prepare lectures and study materials for students. I enjoy helping students in a class that I liked.
+			<img src="img/csm.jpg" class="pic">
+			<img id = "list" class = "hidden" src="img/cs61a.jpg">
+			<div class = "typed" style="width: 20%">
+				<p class = "hidden" id = "printList"></p>
+			</div>
+			<p id = "mentor" class = "in"> I am a Junior Mentor in CSM for CS 61A, The Structure and Interpretation of Computer Programs. I lead weekly tutoring sessions and prepare lectures and <button id = "study" class = "click"> study </button> materials for students. I enjoy helping students in a class that I liked.
 			</p>
 		</div>
 		<div id = "myab">
-			<img src="img/myab.jpg" class = "pic">
-			<p> In high school I was the Vice Chair of the Beaverton Mayor's Youth Advisory Board. I worked with twenty-five teens and Beaverton city council members to identify issues affecting youth in the community, ways we could help, and take action. 
+			<img src="img/myab.jpg" id = "senator" class = "myabpic">
+			<img src="img/senior.jpg" id = "senior" class = "myabpic hidden">
+			<img src="img/group.jpg" id = "group" class = "myabpic hidden">
+
+			<p id = "mayor" class = "in"> In high school I was the Vice Chair of the Beaverton Mayor's Youth Advisory Board. I worked with twenty-five teens and Beaverton city council members to identify issues affecting youth in the community, ways we could help, and take <button id = "action" class = "click"> action </button>. 
 			</p>
 		</div>
 	</section>	
-	<section id = "projects">
+	<section id = "projects" class="main">
+		<h1 class = "label">Projects</h1>
 		<div id = "bearmaps">
-			<img src="img/bearmaps.jpg">
-			<p> Developed a web mapping application that constructs an online user-friendly map of Berkeley and finds the shortest path between locations.
+			<img src="img/bearmaps.jpg" id = "map">
+			<p class = "in description"> Developed a web mapping application that constructs an online user-friendly map of Berkeley and finds the shortest path between locations.
 			</p>
 		</div>
 		<div id = "dataBase">
-			<img src="img/database.jpg">
-			<p> Built a relational database management system (DBMS) in Java and a domain specific language (DSL) similar to SQL for users to interact with the database. Database supports multiple data types, arithmetic operations, comparisons, loading and storing tables, and data selection.
+			<img id = "SQL" src="img/database.jpg">
+			<div class = "typed fill">
+				<p id = "select"></p>
+			</div>
+			<p class = "in description"> Built a relational database management system (DBMS) in Java and a domain specific language (DSL) similar to <button id = "data" class = "click"> SQL </button> for users to interact with the database. Database supports multiple data types, arithmetic operations, comparisons, loading and storing tables, and data selection.
 			</p>
 		</div>
 		<div id="interpreter">
-			<img src="img/scheme.jpg">
-			<p> Developed an interpreter for a subset of the Scheme language in Python. It handled core functionality, user defined procedures, and special forms.
+			<img id = "scheme" src="img/scheme.jpg">
+			<div class = "typed" style="width: 75%">
+				<p id = "select3"></p>
+			</div>
+			<p class = "in description"> Developed an <button id = "interpret" class = "click">interpreter </button> for a subset of the Scheme language in Python. It handled core functionality, user defined procedures, and special forms.
 			</p>
 		</div>
 	</section>
-	<section id = "contact">
+	<section id = "contact" class = "main">
+		<h1 class = "label">Contact</h1>
 		<div id="basic">
 			<p>Ananth Agarwal</p>
 			<p>(503) 964-8870</p>
