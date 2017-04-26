@@ -1,4 +1,6 @@
 $(document).ready(function(){
+
+	// Source for the "typed" function: http://www.mattboldt.com/demos/typed-js/ 
 	$(".head").hover(function() {
 		$(this).css("background-color", "rgb(2, 95, 244)");
 	}, function() {
@@ -18,6 +20,7 @@ $(document).ready(function(){
 
     $("#show").click(function() {
     	$("#blazer1").removeClass("hidden");
+    	$("#blazer2").removeClass("hidden");
     });
     $("#action").click(function() {
     	$("#senior").fadeIn(1000);
@@ -45,7 +48,7 @@ $(document).ready(function(){
     $("#interpret").click(function() {
     	$(function(){
 	 	$("#select3").typed({
-			strings: ["cons('c', cons('s', cons('6', cons('1', cons('a', nil))))) -> ('c' 's' '6' '1' 'a')"],
+			strings: ["(cons 'c (cons 's (cons '6 (cons '1 (cons 'a nil))))) -> (c s 6 1 a)"],
 			typeSpeed: 50
 	 	});
 	 });

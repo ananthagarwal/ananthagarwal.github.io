@@ -21,11 +21,15 @@ li a {
 .nav {
 	width: 100%;
 	margin: 0;
+	position: fixed;
 	padding: 0;
 }
 .main{
 	background-color: rgb(11, 184, 237);
 
+}
+#about {
+	padding-bottom: 50px;
 }
 .project {
 	width: 200px;
@@ -44,9 +48,9 @@ li a {
 }
 
 #intro {
-	padding-top: 85px;
+	padding-top: 120px;
 	font-size: 3em;
-	padding-bottom: 130px;
+	padding-bottom: 170px;
 }
 .typed {
 	color: rgb(232, 228, 225);
@@ -59,10 +63,8 @@ li a {
 #python2 {
 	margin-left: 40px;
 }
-}
-#name {
-	text-align: center;
-}
+
+
 #briefIntro {
 	padding-top: 20px;
 	padding-left: 30px;
@@ -72,6 +74,7 @@ li a {
 .label {
 	font-size: 3em;
 	padding: 20px;
+	padding-top: 50px;
 	font-family: 'Fira Sans';
 	color: rgb(232, 228, 225);
 
@@ -87,8 +90,7 @@ li a {
 }
 .click {
 	background-color: rgb(11, 184, 237);
-    border: none;
-    color: black;
+    color: white;
     text-decoration: underline;
     font-size: 0.8em;
 }
@@ -143,7 +145,7 @@ li a {
 	height: 250px;
 	margin-left: 30px;
 }
-#mentor, #mayor{
+#mentor, #mayor, #coder{
 	width: 90%;
 	margin-left: 10px;
 	display: inline-block;
@@ -154,12 +156,17 @@ li a {
 	width: 450px;
 	height: 450px;
 }
-#blazer1{
+#blazer1, #blazer2{
 	margin-top: 250px;
 	z-index: 1;
 	position: absolute;
-	margin-left: 130px;
+	margin-left: 150px;
+	width: 50px;
 }
+#blazer2 {
+	margin-left: 460px;
+}
+
 .hidden {
 	display: none;
 }
@@ -188,6 +195,15 @@ li a {
 	margin: auto;
 	margin-left: 350px;
 }
+.contactinfo {
+	text-align: center;
+	padding: 10px;
+	font-size: 2em;
+}
+#last {
+	padding-bottom: 80px;
+}
+
 .pic {
 	height: 200px;
 	width: 200px;
